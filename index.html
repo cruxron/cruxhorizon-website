@@ -211,11 +211,14 @@
     }
 
     .product-card {
+      display: block;
       min-height: 260px;
       padding: 34px;
       border: 1px solid var(--border);
       border-radius: 22px;
       background: linear-gradient(145deg, rgba(21, 35, 59, 0.9), rgba(17, 27, 46, 0.75));
+      color: inherit;
+      text-decoration: none;
       transition: border-color 0.2s ease, transform 0.2s ease;
     }
 
@@ -397,13 +400,12 @@
           <h2>Practical software, thoughtfully built.</h2>
           <p>Focused digital tools designed around clarity, privacy, and real-world needs.</p>
         </div>
-
         <div class="product-grid">
-          <article class="product-card">
+          <a href="products/vialvault.html" class="product-card">
             <span class="product-number">01</span>
             <h3>VialVault</h3>
             <p>A privacy-focused inventory and scheduling platform.</p>
-          </article>
+          </a>
 
           <article class="product-card">
             <span class="product-number">02</span>
