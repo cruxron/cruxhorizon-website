@@ -308,6 +308,29 @@
       margin: 0;
     }
 
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 22px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      color: var(--accent);
+    }
+
     @media (max-width: 720px) {
       .site-header {
         padding: 20px 0;
@@ -356,6 +379,11 @@
     @media (max-width: 430px) {
       .container {
         width: min(calc(100% - 28px), var(--max-width));
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        gap: 12px;
       }
 
       .nav-links {
@@ -443,8 +471,12 @@
   </main>
 
   <footer>
-    <div class="container">
+    <div class="footer-inner container">
       <p>&copy; Crux Horizon</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:support@cruxhorizon.com">Support</a>
+      </nav>
     </div>
   </footer>
 </body>
