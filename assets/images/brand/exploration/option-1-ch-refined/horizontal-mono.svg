@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238 48" role="img" aria-labelledby="title desc">
+  <title id="title">Crux Horizon refined CH monochrome horizontal logo</title>
+  <desc id="desc">The refined CH monogram with the Crux Horizon single-colour vector-path wordmark for light backgrounds.</desc>
+  <path fill="#07111F" transform="translate(2 2) scale(.6875)" d="M39 11H27C15.2 11 8 20 8 32s7.2 21 19 21h12V43H28c-6.5 0-10-4.4-10-11s3.5-11 10-11h11z"/>
+  <path fill="#07111F" transform="translate(2 2) scale(.6875)" d="M30 23h8v5h7v-8l10-9v42H45V37h-7v4h-8z"/>
+  <path fill="#07111F" transform="translate(56 15) scale(1.35)" d="M8 0H2L0 2v8l2 2h6V9H3L2 8V4l1-1h5z"/>
+  <path fill="#07111F" transform="translate(70.85 15) scale(1.35)" d="M0 0h5.5L8 2.5v3L6 7l2.5 5H5L2.5 7.5H2V12H0zm2 2v3.5h3.2l.8-.8V2.8L5.2 2z"/>
+  <path fill="#07111F" transform="translate(85.7 15) scale(1.35)" d="M0 0h2v9l1 1h2l1-1V0h2v10l-2 2H2l-2-2z"/>
+  <path fill="#07111F" transform="translate(100.55000000000001 15) scale(1.35)" d="M0 0h2.4L4 3.4 5.6 0H8L5.2 6 8 12H5.6L4 8.6 2.4 12H0l2.8-6z"/>
+  <path fill="#07111F" transform="translate(122.15 15) scale(1.35)" d="M0 0h2v5h4V0h2v12H6V7H2v5H0z"/>
+  <path fill="#07111F" transform="translate(137 15) scale(1.35)" d="M2 0h4l2 2v8l-2 2H2l-2-2V2zm1 2L2 3v6l1 1h2l1-1V3L5 2z"/>
+  <path fill="#07111F" transform="translate(151.85000000000002 15) scale(1.35)" d="M0 0h5.5L8 2.5v3L6 7l2.5 5H5L2.5 7.5H2V12H0zm2 2v3.5h3.2l.8-.8V2.8L5.2 2z"/>
+  <path fill="#07111F" transform="translate(166.7 15) scale(1.35)" d="M0 0h8v2H5v8h3v2H0v-2h3V2H0z"/>
+  <path fill="#07111F" transform="translate(181.55 15) scale(1.35)" d="M0 0h8v2l-5 8h5v2H0v-2l5-8H0z"/>
+  <path fill="#07111F" transform="translate(196.4 15) scale(1.35)" d="M2 0h4l2 2v8l-2 2H2l-2-2V2zm1 2L2 3v6l1 1h2l1-1V3L5 2z"/>
+  <path fill="#07111F" transform="translate(211.25 15) scale(1.35)" d="M0 0h2l4 7V0h2v12H6L2 5v7H0z"/>
+</svg>

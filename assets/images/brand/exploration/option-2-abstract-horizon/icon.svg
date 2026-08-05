@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Crux Horizon abstract horizon concept</title>
+  <desc id="desc">A broad horizon crossed by a continuous path rising forward.</desc>
+  <rect width="64" height="64" rx="14" fill="#07111F"/>
+  <path fill="#F4F7FB" d="M8 35h48v10H8z"/>
+  <path fill="#69B1FF" d="M10 45 31 24h11l8-8h-7V8h21v21h-8v-7L46 32H35L22 45z"/>
+</svg>

@@ -1,57 +1,95 @@
-# Crux Horizon brand assets
+# Crux Horizon production brand assets
 
-This directory is reserved for final, production-approved Crux Horizon brand
-assets. Do not add temporary artwork or generated placeholders.
+This directory contains the approved Crux Horizon `reference-ch-energy-refined`
+production identity system. The artwork is built entirely from SVG paths and
+uses no external fonts, raster images, gradients, filters, or dependencies.
 
-## Required files
+## Production selection
 
-- `favicon.svg` — square SVG browser icon, recommended `viewBox="0 0 32 32"`;
-  designed to remain clear at 16 × 16 px and 32 × 32 px
-- `apple-touch-icon.png` — 180 × 180 px PNG for Apple home-screen bookmarks;
-  opaque background recommended
-- `social-preview.png` — 1200 × 630 px PNG for Open Graph and social cards;
-  keep essential content inside a central safe area
-- `logo.svg` — primary scalable Crux Horizon logo or wordmark; use a tight
-  horizontal `viewBox` appropriate to the artwork (approximately 5:1 for a
-  wordmark), and avoid embedded raster images or external font dependencies
+The approved identity combines an angular CH monogram with a rising diagonal
+energy element and a custom outlined wordmark. Do not rotate, rearrange,
+redraw, or apply effects to these elements.
 
-## Activation
+- `logo.svg` — primary horizontal colour lockup for dark Crux Horizon surfaces
+- `logo-on-dark.svg` — explicit dark-background horizontal colour lockup
+- `logo-on-light.svg` — approved single-colour horizontal lockup for white or
+  pale surfaces
+- `logo-mono.svg` — single-colour horizontal lockup for one-ink production
+- `mark.svg` — compact colour CH icon on its navy tile
+- `mark-mono.svg` — compact single-colour CH icon without a background tile
+- `favicon.svg` — compact colour CH icon used by browser favicon references
 
-The HTML files contain inactive, root-relative metadata hooks for the favicon,
-Apple touch icon, and social preview. Enable those tags only after the matching
-production files exist at the paths above.
+The production files are promoted from
+`exploration/reference-ch-energy-refined/`. That exploration directory remains
+the approved source record; production pages reference only the files in this
+directory.
 
-### Logo
+## Approved colours
 
-Every current `.brand` link contains an inactive example for `logo.svg`. After
-the production logo has been added:
+- Navy background: `#07111F`
+- White: `#F4F7FB`
+- CH blue: `#2F86EB`
+- Energy and wordmark accent blue: `#69B1FF`
 
-1. Replace the visible `Crux <span>Horizon</span>` text inside each `.brand`
-   link with the documented `<img>` element.
-2. Keep `alt="Crux Horizon"` so the linked logo retains its accessible name.
-3. Keep the root-relative `/assets/images/brand/logo.svg` path on all pages.
-4. Verify the artwork at the shared `.brand-logo` display height of 28 px and
-   at narrow mobile widths.
+Do not introduce gradients, glow, shadows, textures, outlines, or additional
+colours inside the logo artwork.
 
-Do not keep both meaningful image alt text and visually hidden duplicate brand
-text, because that can create a repeated accessible name. If a future layout
-keeps visible text beside the mark, use `alt=""` on the decorative image and
-leave the text as the accessible label.
+## Horizontal lockup usage
 
-### Browser icons
+Use `logo.svg` or `logo-on-dark.svg` in website headers and on dark navy
+surfaces. They contain the white C and “Crux” letterforms, blue H and “Horizon”
+letterforms, and the brighter diagonal energy element.
 
-After both icon files exist, uncomment the prepared `<link rel="icon">` and
-`<link rel="apple-touch-icon">` elements in every page head. Confirm that the
-SVG favicon has no external resources and that the PNG is exactly 180 × 180 px.
+Use `logo-on-light.svg` on white and pale neutral surfaces. It is intentionally
+the approved navy monochrome lockup rather than an unapproved recoloured
+variant. Use `logo-mono.svg` for one-colour printing, embossing, engraving, and
+other restricted production methods. A print vendor may change every navy fill
+uniformly to the selected single ink; individual components must not be
+recoloured separately.
 
-### Social preview
+Maintain clear space equal to at least one quarter of the icon height. Do not
+display the horizontal lockup below 120 px wide. The website currently renders
+`logo-on-dark.svg` at a 28 px height through the shared `.brand-logo` rule.
 
-When `social-preview.png` is added, enable both `og:image` and `twitter:image`,
-then change `twitter:card` from `summary` to `summary_large_image` on every page.
-Use `https://cruxhorizon.com/assets/images/brand/social-preview.png` as the
-absolute social image URL.
+## Icon usage
 
-If `logo.svg` is displayed in page content, provide an accessible name through
-descriptive `alt` text on `<img>` or `aria-label` on a linked logo. A purely
-decorative duplicate mark should use `alt=""` and must not carry information
-that is unavailable in text.
+Use `mark.svg` for profiles, social avatars, app identity, and other compact
+colour applications. Retain the complete square canvas and navy tile. Apply
+platform-specific safe areas and corner masks only during exported app-icon
+production; do not crop the source artwork.
+
+Use `mark-mono.svg` for one-colour document and merchandise applications. Do
+not place the navy monochrome mark on a dark background without changing the
+entire mark uniformly to a suitable single light ink.
+
+The minimum approved icon size is 16 px. Prefer 32 px or larger whenever space
+allows.
+
+## Favicon usage
+
+`favicon.svg` is the approved colour CH icon and is active through the existing
+root-relative favicon reference on every HTML page. Its 64 × 64 viewBox scales
+cleanly to 16 px and 32 px browser sizes.
+
+Do not add separate details to the favicon artwork. If raster favicon formats
+are required later, export them directly from `favicon.svg` with the complete
+navy tile intact.
+
+## Accessibility
+
+Horizontal logos used as the only visible content of a link require meaningful
+alternative text such as `alt="Crux Horizon"`. Do not add duplicate visually
+hidden brand text to the same link. Decorative duplicate marks should use an
+empty `alt` attribute.
+
+Each SVG includes an accessible title and description. Preserve these when
+optimising or exporting the artwork.
+
+## Remaining raster assets
+
+- `apple-touch-icon.png` — future 180 × 180 px opaque PNG exported from
+  `mark.svg`
+- `social-preview.png` — future 1200 × 630 px Open Graph and social card image
+
+Do not enable references to these files until the real production exports
+exist. Keep essential social-preview content inside a central safe area.
