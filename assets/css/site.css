@@ -84,6 +84,13 @@
       transform: translateY(0);
     }
 
+    .brand-logo {
+      display: block;
+      width: auto;
+      max-width: min(190px, 42vw);
+      height: 28px;
+    }
+
     .home-page .container {
       width: min(calc(100% - var(--page-gutter)), var(--max-width));
       margin: 0 auto;
