@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">Crux Horizon CH icon</title>
-  <desc id="desc">An angular white C and blue H divided by a rising blue energy line on navy.</desc>
-  <path fill="#07111F" d="M14 0h36c7.7 0 14 6.3 14 14v36c0 7.7-6.3 14-14 14H14C6.3 64 0 57.7 0 50V14C0 6.3 6.3 0 14 0z"/>
-  <path fill="#F4F7FB" d="M38 10H20c-7.7 0-13.1 4.8-15.1 12.2L1.2 36.4C-1.3 46 5.1 54 14.8 54H27l10-11H17.5c-4.2 0-6.6-3.5-5.5-7.5l2.6-9.8c.9-3.4 3.2-5.7 6.8-5.7H29z"/>
-  <path fill="#2F86EB" d="M45 18h12L47.4 54H35.5l4-15H25l10.2-10h7z"/>
-  <path fill="#69B1FF" d="M11.7 56.44 16.3 59.56 52.3 7.56 47.7 4.44z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Crux Horizon original CH final trace</title>
+  <desc id="desc">The original curved white C and blue H crossed by a thin tapered blue energy line on navy.</desc>
+  <path fill="#07111F" d="M0 0h800v800H0z"/>
+  <path fill="#F4F7FB" d="M502 268H166c-50 0-92 33-106 81L20 479c-17 55 20 107 73 107h97l73-77H126c-21 0-32-18-26-38l29-102c5-18 20-30 38-30h256z"/>
+  <path fill="#2F86EB" d="M610.3 361h58.5l-69 215h-59.3l27.8-84.6h-195l68.2-54.8H587z"/>
+  <path fill="#69B1FF" d="M137 694c34-34 59-58 84-77L690 129l33-20-33 35-451 483c-36 29-69 51-102 67z"/>
 </svg>
