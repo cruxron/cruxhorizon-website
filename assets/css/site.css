@@ -986,10 +986,71 @@
       pointer-events: none;
     }
 
-    .vialvault-page .product-hero-content {
+    .vialvault-page .product-hero-layout {
       position: relative;
       z-index: 1;
+    }
+
+    .vialvault-page .product-hero-content {
       max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .vialvault-page .product-showcase[data-visual-state="empty"],
+    .vialvault-page .capability-visual[data-visual-state="empty"] {
+      display: none;
+    }
+
+    .vialvault-page .product-hero-layout.has-product-visual {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      align-items: center;
+      gap: 64px;
+      text-align: left;
+    }
+
+    .vialvault-page .product-hero-layout.has-product-visual .product-hero-content {
+      margin: 0;
+    }
+
+    .vialvault-page .product-hero-layout.has-product-visual .product-positioning,
+    .vialvault-page .product-hero-layout.has-product-visual .product-intro {
+      margin-left: 0;
+    }
+
+    .vialvault-page .product-hero-layout.has-product-visual .product-actions {
+      justify-content: flex-start;
+    }
+
+    .vialvault-page .product-showcase,
+    .vialvault-page .capability-visual {
+      margin: 0;
+      overflow: hidden;
+      border: var(--border-width) solid var(--border-strong);
+      background: var(--surface-raised);
+      box-shadow: var(--shadow-large);
+    }
+
+    .vialvault-page .product-showcase {
+      padding: 12px;
+      border-radius: 28px;
+      transform: perspective(1200px) rotateY(-3deg) rotateX(1deg);
+    }
+
+    .vialvault-page .product-showcase img,
+    .vialvault-page .capability-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 17px;
+    }
+
+    .vialvault-page .product-showcase figcaption,
+    .vialvault-page .capability-visual figcaption {
+      padding: 12px 4px 2px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
     }
 
     .vialvault-page .product-eyebrow {
@@ -1135,13 +1196,29 @@
       grid-column: 2 / span 2;
     }
 
-    .vialvault-page .capability-card > span {
+    .vialvault-page .capability-card > span,
+    .vialvault-page .capability-card-content > span {
       display: inline-block;
       margin-bottom: 56px;
       color: var(--accent);
       font-size: 12px;
       font-weight: 750;
       letter-spacing: 0.16em;
+    }
+
+    .vialvault-page .capability-card.has-product-visual {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+      align-items: center;
+      gap: 48px;
+      min-height: 0;
+      padding: 40px;
+    }
+
+    .vialvault-page .capability-visual {
+      padding: 10px;
+      border-radius: 22px;
     }
 
     .vialvault-page .capability-card h3 {
@@ -1275,6 +1352,25 @@
         padding: 170px 0 105px;
       }
 
+      .vialvault-page .product-hero-layout.has-product-visual,
+      .vialvault-page .capability-card.has-product-visual {
+        grid-template-columns: 1fr;
+      }
+
+      .vialvault-page .product-hero-layout.has-product-visual {
+        gap: 48px;
+        text-align: center;
+      }
+
+      .vialvault-page .product-hero-layout.has-product-visual .product-positioning,
+      .vialvault-page .product-hero-layout.has-product-visual .product-intro {
+        margin-left: auto;
+      }
+
+      .vialvault-page .product-hero-layout.has-product-visual .product-actions {
+        justify-content: center;
+      }
+
       .vialvault-page h1 {
         font-size: clamp(58px, 17vw, 88px);
       }
@@ -1348,8 +1444,19 @@
         min-height: 0;
       }
 
-      .vialvault-page .capability-card > span {
+      .vialvault-page .capability-card > span,
+      .vialvault-page .capability-card-content > span {
         margin-bottom: 42px;
+      }
+
+      .vialvault-page .capability-card.has-product-visual {
+        padding: 26px 20px;
+      }
+
+      .vialvault-page .product-showcase {
+        padding: 8px;
+        border-radius: 22px;
+        transform: none;
       }
 
       .vialvault-page .product-privacy-panel {
