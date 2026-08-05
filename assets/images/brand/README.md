@@ -1,10 +1,31 @@
 # Crux Horizon brand assets
 
-Reserved paths for production brand assets:
+This directory is reserved for final, production-approved Crux Horizon brand
+assets. Do not add temporary artwork or generated placeholders.
 
-- `favicon.svg` — browser favicon
-- `apple-touch-icon.png` — 180 × 180 px site icon
-- `social-preview.png` — 1200 × 630 px social sharing image
+## Required files
 
-The HTML social metadata already targets `social-preview.png`. Add active favicon
-and Apple touch icon `<link>` elements only when those files exist.
+- `favicon.svg` — square SVG browser icon with a `viewBox`; designed to remain
+  clear at 16 × 16 px and 32 × 32 px
+- `apple-touch-icon.png` — 180 × 180 px PNG for Apple home-screen bookmarks;
+  opaque background recommended
+- `social-preview.png` — 1200 × 630 px PNG for Open Graph and social cards;
+  keep essential content inside a central safe area
+- `logo.svg` — primary scalable Crux Horizon logo or wordmark; include a
+  `viewBox` and avoid embedded raster images or external font dependencies
+
+## Activation
+
+The HTML files contain inactive, root-relative metadata hooks for the favicon,
+Apple touch icon, and social preview. Enable those tags only after the matching
+production files exist at the paths above.
+
+When `social-preview.png` is added, enable both `og:image` and `twitter:image`,
+then change `twitter:card` from `summary` to `summary_large_image` on every page.
+Use `https://cruxhorizon.com/assets/images/brand/social-preview.png` as the
+absolute social image URL.
+
+If `logo.svg` is displayed in page content, provide an accessible name through
+descriptive `alt` text on `<img>` or `aria-label` on a linked logo. A purely
+decorative duplicate mark should use `alt=""` and must not carry information
+that is unavailable in text.

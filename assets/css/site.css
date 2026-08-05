@@ -854,6 +854,55 @@
       }
     }
 
+    .asset-frame[data-asset-state="empty"],
+    .asset-frame[hidden] {
+      display: none;
+    }
+
+    .asset-frame {
+      margin: 0;
+      padding: 10px;
+      overflow: hidden;
+      border: var(--border-width) solid var(--border-strong, var(--border));
+      border-radius: var(--card-radius);
+      background: var(--surface-raised, var(--surface));
+      box-shadow: var(--shadow-large, 0 18px 48px rgba(0, 5, 14, 0.3));
+    }
+
+    .asset-frame--device {
+      padding: clamp(10px, 1.5vw, 16px);
+      border-color: var(--border-strong, var(--border));
+      border-radius: clamp(22px, 3vw, 32px);
+      background: var(--surface);
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.025) inset,
+        var(--shadow-large, 0 18px 48px rgba(0, 5, 14, 0.3));
+    }
+
+    .asset-frame--flush {
+      padding: 0;
+    }
+
+    .asset-frame__media {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: max(12px, calc(var(--card-radius) - 8px));
+    }
+
+    .asset-frame--flush .asset-frame__media {
+      border-radius: inherit;
+    }
+
+    .asset-caption {
+      margin: 0;
+      padding: 12px 4px 2px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
     .vialvault-page {
       --background: #07111f;
       --surface: #0d1a2c;
@@ -996,8 +1045,8 @@
       margin: 0 auto;
     }
 
-    .vialvault-page .product-showcase[data-visual-state="empty"],
-    .vialvault-page .capability-visual[data-visual-state="empty"] {
+    .vialvault-page .product-showcase[data-asset-state="empty"],
+    .vialvault-page .capability-visual[data-asset-state="empty"] {
       display: none;
     }
 
