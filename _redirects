@@ -1,4 +1,5 @@
 # Serve VialVault deep-link fallbacks instead of the SPA homepage.
-# More specific rules first. Static association files still take precedence.
-/v/v1/*  /v/v1.html  200
-/v/*     /v/unsupported.html  200
+# Targets live outside /v/ so they are not rematched by these rules
+# and are not rewritten by Cloudflare Pages HTML Pretty URLs under /v/.
+/v/v1/*  /vial-link/v1/  200
+/v/*     /vial-link/unsupported/  200
