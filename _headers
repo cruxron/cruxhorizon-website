@@ -1,0 +1,15 @@
+# Association files must be raw JSON (not the SPA HTML shell).
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+  Cache-Control: public, max-age=300
+  X-Content-Type-Options: nosniff
+
+/apple-app-site-association
+  Content-Type: application/json
+  Cache-Control: public, max-age=300
+  X-Content-Type-Options: nosniff
+
+/.well-known/assetlinks.json
+  Content-Type: application/json
+  Cache-Control: public, max-age=300
+  X-Content-Type-Options: nosniff

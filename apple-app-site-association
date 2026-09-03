@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["4KG2F4JV52.com.cruxhorizon.vialvault"],
+        "components": [
+          { "/": "/v/*" }
+        ]
+      }
+    ]
+  }
+}

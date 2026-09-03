@@ -1,0 +1,4 @@
+# Serve VialVault deep-link fallbacks instead of the SPA homepage.
+# More specific rules first. Static association files still take precedence.
+/v/v1/*  /v/v1.html  200
+/v/*     /v/unsupported.html  200
