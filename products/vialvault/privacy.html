@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn how VialVault stores application data locally and how Crux Horizon handles support and beta communications.">
+  <meta name="description" content="Learn how VialVault stores application data locally on your device and how CRUX HORIZON PTY LTD handles support communications.">
   <link rel="canonical" href="https://cruxhorizon.com/products/vialvault/privacy.html">
   <link rel="icon" href="/assets/images/brand/favicon.svg" type="image/svg+xml">
   <!-- Enable when the real file exists:
@@ -11,7 +11,7 @@
   -->
 
   <meta property="og:title" content="VialVault Privacy Policy — Crux Horizon">
-  <meta property="og:description" content="Learn how VialVault stores application data locally and how Crux Horizon handles support and beta communications.">
+  <meta property="og:description" content="Learn how VialVault stores application data locally on your device and how CRUX HORIZON PTY LTD handles support communications.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cruxhorizon.com/products/vialvault/privacy.html">
   <!-- Enable when the real social preview exists:
@@ -21,7 +21,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="VialVault Privacy Policy — Crux Horizon">
-  <meta name="twitter:description" content="Learn how VialVault stores application data locally and how Crux Horizon handles support and beta communications.">
+  <meta name="twitter:description" content="Learn how VialVault stores application data locally on your device and how CRUX HORIZON PTY LTD handles support communications.">
   <!-- Enable with social-preview.png and change twitter:card to summary_large_image:
   <meta name="twitter:image" content="https://cruxhorizon.com/assets/images/brand/social-preview.png">
   -->
@@ -89,6 +89,14 @@
       transform: translateY(-1px);
     }
 
+    .header-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
     .hero {
       position: relative;
       overflow: hidden;
@@ -139,6 +147,12 @@
       margin-bottom: 0;
       color: var(--muted);
       font-size: clamp(18px, 2.5vw, 21px);
+    }
+
+    .effective-date {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 15px;
     }
 
     .policy {
@@ -203,6 +217,24 @@
       margin: 0;
     }
 
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      color: var(--accent);
+    }
+
     @media (max-width: 640px) {
       .container {
         width: min(calc(100% - 28px), var(--max-width));
@@ -210,6 +242,17 @@
 
       .site-header {
         padding: 18px 0;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .header-actions {
+        width: 100%;
+        justify-content: flex-start;
       }
 
       .back-link {
@@ -245,7 +288,10 @@
       <a class="brand" href="../../index.html">
         <img class="brand-logo" src="../../assets/images/brand/logo-on-dark.svg" alt="Crux Horizon">
       </a>
-      <a class="back-link" href="../../index.html">Back to Crux Horizon</a>
+      <div class="header-actions">
+        <a class="back-link" href="index.html">Back to VialVault</a>
+        <a class="back-link" href="../../index.html">Back to Crux Horizon</a>
+      </div>
     </nav>
   </header>
 
@@ -253,83 +299,165 @@
     <section class="hero" aria-labelledby="page-title">
       <div class="hero-content container">
         <p class="eyebrow">Privacy Policy</p>
-        <h1 id="page-title">Privacy Policy</h1>
+        <h1 id="page-title">VialVault Privacy Policy</h1>
         <p class="intro">
-          This policy explains how Crux Horizon handles information in connection with VialVault and related support communications during the VialVault beta.
+          This policy explains how CRUX HORIZON PTY LTD (“Crux Horizon”) handles information in connection with the VialVault application and related support communications.
         </p>
+        <p class="effective-date">Effective date: 24 September 2026</p>
       </div>
     </section>
 
     <div class="policy">
       <div class="policy-card container">
-        <section class="policy-section" aria-labelledby="overview">
-          <h2 id="overview">Overview</h2>
+        <section class="policy-section" aria-labelledby="about-vialvault">
+          <h2 id="about-vialvault">About VialVault</h2>
           <p>
-            VialVault is a privacy-focused application with local data storage. Information entered into the application is intended to remain on the device where VialVault is used, except when a user chooses to export, back up, or share that information. This policy applies to the VialVault beta and communications sent directly to Crux Horizon.
+            VialVault is an organizational application for personal vial inventory, preparation records, scheduling, reminders, planning, and mathematical reference calculations.
+          </p>
+          <p>
+            VialVault does not create a VialVault user account and does not synchronize your inventory, schedules, or history with a Crux Horizon cloud service.
           </p>
         </section>
 
         <section class="policy-section" aria-labelledby="information-stored">
-          <h2 id="information-stored">Information We Store</h2>
+          <h2 id="information-stored">Information Stored on the Device</h2>
           <p>
-            VialVault stores the inventory, scheduling, preferences, and other content that a user enters into the application. This application data is stored locally on the user's device. Crux Horizon does not routinely receive the content entered into VialVault.
+            VialVault may store information you enter or generate in the app locally on your device. Depending on how you use VialVault, this may include:
+          </p>
+          <ul>
+            <li>vial and inventory details;</li>
+            <li>compound names, strengths, and quantities;</li>
+            <li>preparation and reconstitution information;</li>
+            <li>storage information;</li>
+            <li>supplier, batch, expiry, and notes where you enter them;</li>
+            <li>schedules, plans, and titration or course details;</li>
+            <li>dose and activity history;</li>
+            <li>reminder preferences;</li>
+            <li>an optional preferred name and appearance settings;</li>
+            <li>custom label templates and artwork; and</li>
+            <li>opaque vial link identifiers used for printed QR labels.</li>
+          </ul>
+        </section>
+
+        <section class="policy-section" aria-labelledby="how-information-is-used">
+          <h2 id="how-information-is-used">How Information Is Used</h2>
+          <p>
+            Information stored on your device is used to operate VialVault on that device. This includes displaying your inventory, performing mathematical reference calculations from values you provide, managing schedules and plans you create, scheduling local reminders, creating labels, and supporting backup, export, and restore features you control.
           </p>
         </section>
 
         <section class="policy-section" aria-labelledby="local-storage">
-          <h2 id="local-storage">Local Data Storage</h2>
+          <h2 id="local-storage">Local Storage</h2>
           <p>
-            VialVault's primary application data is stored locally on the device. Users are responsible for controlling access to their device and maintaining appropriate device-level security. Device operating systems, device backups, or services separately enabled by the user may handle local application data under their own settings and policies.
+            Inventory, schedules, history, settings, and related records remain on your device unless you choose an action that moves information outside the app. Examples include exporting or sharing a backup, printing or sharing a label PDF, sending feedback email, or opening an external link in your browser.
+          </p>
+          <p>
+            Your device operating system, device backups, or other services you enable separately may also handle local application data under their own settings and policies.
+          </p>
+        </section>
+
+        <section class="policy-section" aria-labelledby="photos-artwork">
+          <h2 id="photos-artwork">Photos and Label Artwork</h2>
+          <p>
+            If you add artwork to a custom label, VialVault uses the system photo or file picker so you can choose an image. Selected artwork is stored locally with the app. VialVault does not upload selected artwork to Crux Horizon. Camera access is not required for this feature.
+          </p>
+        </section>
+
+        <section class="policy-section" aria-labelledby="notifications">
+          <h2 id="notifications">Notifications</h2>
+          <p>
+            VialVault can show local dose reminders on your device. Notification permission is controlled by your operating system and can be changed in device settings. Reminder information is not sent to a Crux Horizon push-notification server.
+          </p>
+        </section>
+
+        <section class="policy-section" aria-labelledby="backups-exports">
+          <h2 id="backups-exports">Backups, Exports and Sharing</h2>
+          <p>
+            If you export a backup, the file may contain private inventory, preparation, scheduling, planning, and dose-history information. Export and sharing use operating-system interfaces, and you choose where the file is saved or sent. VialVault does not upload backups to a Crux Horizon server.
+          </p>
+          <p>
+            VialVault does not encrypt backup files. Protect exported backups and only store or share them using destinations you trust. Reset App Data does not delete backup copies stored outside the app. Label PDFs may also be printed or shared through operating-system interfaces.
+          </p>
+        </section>
+
+        <section class="policy-section" aria-labelledby="qr-deep-links">
+          <h2 id="qr-deep-links">QR Codes and Deep Links</h2>
+          <p>
+            Printed VialVault QR codes use a web link that contains an opaque vial identifier. The QR code does not contain compound names, strengths, doses, schedules, supplier, batch, expiry, or notes. When opened in the installed VialVault app, the identifier is matched against your local inventory. VialVault does not use these QR links for advertising or analytics inside the app.
+          </p>
+          <p>
+            If a VialVault QR link is opened in a web browser instead of the app, a static Crux Horizon fallback page may load. That page does not display vial details. The current website source does not use scripts to parse the vial identifier. Ordinary website or hosting request information may still be processed by the hosting provider under its own practices.
+          </p>
+        </section>
+
+        <section class="policy-section" aria-labelledby="external-links">
+          <h2 id="external-links">External Links and Sources</h2>
+          <p>
+            Some in-app references, including Sources &amp; Methodology links, open externally in your browser. External websites operate under their own privacy practices. Opening those links does not send your VialVault inventory or schedule database to Crux Horizon.
           </p>
         </section>
 
         <section class="policy-section" aria-labelledby="feedback-support">
-          <h2 id="feedback-support">Feedback and Support Communications</h2>
+          <h2 id="feedback-support">Feedback and Support Email</h2>
           <p>
-            If a user contacts Crux Horizon or submits beta feedback, we may receive the information they choose to provide, such as their name, email address, message, and relevant diagnostic details. We use this information to respond, investigate issues, improve VialVault, and administer the beta. Users should avoid including sensitive information that is not needed to address their request.
+            Feedback and support are optional and user-initiated. When you choose feedback in VialVault, the app opens an email draft addressed to
+            <a class="contact-link" href="mailto:support@cruxhorizon.com">support@cruxhorizon.com</a>.
+            You can review, edit, or discard the draft before anything is sent. VialVault does not automatically send feedback.
+          </p>
+          <p>
+            The generated draft may include the feedback category or type you selected, a workflow area, task-completion status, and app version, build, and platform information. It does not automatically include your inventory contents, schedules, or dose history. If you send the email, Crux Horizon receives the sender email address and the message contents you choose to provide, and your email provider may also process the message under its own policy.
+          </p>
+          <p>
+            Support correspondence may be retained as reasonably necessary to respond to your enquiry and maintain support records. Please avoid including sensitive information that is not needed to address your request.
           </p>
         </section>
 
-        <section class="policy-section" aria-labelledby="backup-files">
-          <h2 id="backup-files">Backup Files</h2>
+        <section class="policy-section" aria-labelledby="analytics-advertising">
+          <h2 id="analytics-advertising">Analytics, Advertising and Tracking</h2>
           <p>
-            VialVault may allow users to create or manage backup or export files. These files may contain application data. Users control where those files are saved, copied, or shared and should store them in a location they consider secure. Crux Horizon does not receive a backup file unless the user deliberately sends it to us.
+            The current VialVault application does not include advertising SDKs, does not include analytics SDKs that automatically transmit inventory or schedule usage data to Crux Horizon, and does not use cross-app advertising tracking. If these practices change, this policy will be updated.
           </p>
         </section>
 
-        <section class="policy-section" aria-labelledby="data-security">
-          <h2 id="data-security">Data Security</h2>
+        <section class="policy-section" aria-labelledby="retention-deletion">
+          <h2 id="retention-deletion">Data Retention and Deletion</h2>
           <p>
-            Crux Horizon uses reasonable administrative and technical practices when handling information provided directly to us. No storage or communication method can be guaranteed to be completely secure. Users should protect their devices, accounts, and backup files with appropriate access controls.
+            You can modify or delete records within VialVault. Reset App Data removes VialVault’s local application data from that device. Reset does not remove backups, shared PDFs, or emails already stored or sent elsewhere.
+          </p>
+          <p>
+            Because VialVault does not currently operate a VialVault cloud inventory account, there is no VialVault cloud inventory account to delete. Removing the app from a device typically removes the app’s local storage on that device, subject to how your operating system manages application data.
+          </p>
+          <p>
+            For questions about support correspondence you sent directly to Crux Horizon, contact us using the address below.
           </p>
         </section>
 
-        <section class="policy-section" aria-labelledby="deletion-requests">
-          <h2 id="deletion-requests">Data Deletion Requests</h2>
+        <section class="policy-section" aria-labelledby="website-hosting">
+          <h2 id="website-hosting">Website and Hosting</h2>
           <p>
-            Because VialVault application data is stored locally, users can manage or remove that data through the application and their device. To request deletion of personal information provided directly to Crux Horizon through feedback or support, email us at the address below. We may retain limited information where reasonably necessary to meet legal, security, or record-keeping obligations.
+            Product and company pages on the Crux Horizon website, including this policy and VialVault QR fallback pages, are part of a static informational website. The current website source does not set cookies or use analytics tools. Hosting or platform providers may process ordinary technical request information, such as an IP address, browser type, or request time, under their own practices.
           </p>
-        </section>
-
-        <section class="policy-section" aria-labelledby="third-party-services">
-          <h2 id="third-party-services">Third-Party Services</h2>
           <p>
-            A user's device platform, application distributor, email provider, or other service selected by the user may process information independently of Crux Horizon. Those services are governed by their own terms and privacy policies. Crux Horizon is not responsible for the privacy practices of third-party services.
+            For company-level website practices, see also the
+            <a class="contact-link" href="../../privacy.html">Crux Horizon Privacy Policy</a>.
           </p>
         </section>
 
         <section class="policy-section" aria-labelledby="policy-changes">
           <h2 id="policy-changes">Changes to This Policy</h2>
           <p>
-            We may update this policy as VialVault develops, our practices change, or applicable requirements evolve. The updated policy will be published on this page. Material changes may also be communicated through an appropriate product or support channel.
+            We may update this policy when VialVault’s practices change or applicable requirements evolve. The updated policy will be published on this page with a revised effective date.
           </p>
         </section>
 
         <section class="policy-section" aria-labelledby="contact">
           <h2 id="contact">Contact</h2>
           <p>
-            For privacy questions, support enquiries, or data deletion requests, contact Crux Horizon at
-            <a class="contact-link" href="mailto:support@cruxhorizon.com">support@cruxhorizon.com</a>.
+            For privacy questions or support enquiries relating to VialVault, contact:
+          </p>
+          <p>
+            CRUX HORIZON PTY LTD<br>
+            <a class="contact-link" href="mailto:support@cruxhorizon.com">support@cruxhorizon.com</a>
           </p>
         </section>
       </div>
@@ -338,7 +466,12 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Crux Horizon</p>
+      <p>&copy; 2026 CRUX HORIZON PTY LTD</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">VialVault</a>
+        <a href="../../index.html">Crux Horizon</a>
+        <a href="../../privacy.html">Crux Horizon Privacy</a>
+      </nav>
     </div>
   </footer>
 </body>
