@@ -1,12 +1,13 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.cruxhorizon.vialvault",
       "sha256_cert_fingerprints": [
-        "REPLACE_WITH_UPLOAD_CERT_SHA256",
-        "REPLACE_WITH_PLAY_APP_SIGNING_CERT_SHA256"
+        "DC:47:35:B2:D2:E7:77:25:00:83:4A:5A:71:00:D6:C7:F9:30:6B:82:8C:03:55:98:5E:22:1B:0B:B2:0E:EB:2E"
       ]
     }
   }
