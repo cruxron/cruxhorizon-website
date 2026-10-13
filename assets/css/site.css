@@ -489,6 +489,14 @@
       font-size: 18px;
     }
 
+    .home-page .featured-product-disclaimer {
+      margin: 22px 0 0;
+      max-width: 420px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
     .home-page .featured-product-details {
       display: flex;
       flex-direction: column;
@@ -497,6 +505,46 @@
       border: var(--border-width) solid rgba(158, 175, 195, 0.15);
       border-radius: var(--card-radius);
       background: rgba(7, 17, 31, 0.48);
+    }
+
+    .home-page .product-status--live {
+      border-color: rgba(105, 177, 255, 0.5);
+    }
+
+    .store-badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .store-badge {
+      display: inline-flex;
+      line-height: 0;
+      border-radius: 8px;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .store-badge:hover,
+    .store-badge:focus-visible {
+      opacity: 0.92;
+      transform: translateY(-1px);
+    }
+
+    .store-badge img {
+      display: block;
+      width: auto;
+      height: 40px;
+    }
+
+    .store-badges--hero {
+      justify-content: center;
+      margin-top: 32px;
+    }
+
+    .store-badges--panel {
+      margin-top: 0;
     }
 
     .home-page .benefit-list {
@@ -920,6 +968,14 @@
 
       .home-page .product-links a {
         justify-content: center;
+      }
+
+      .home-page .store-badges {
+        justify-content: center;
+      }
+
+      .home-page .featured-product-disclaimer {
+        text-align: left;
       }
 
       .home-page .approach-list li {
@@ -1629,6 +1685,139 @@
       grid-column: span 2;
     }
 
+    .vialvault-calculator-page .product-app-icon {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 28px;
+    }
+
+    .vialvault-calculator-page .product-app-icon picture,
+    .vialvault-calculator-page .product-app-icon img {
+      display: block;
+    }
+
+    .vialvault-calculator-page .product-app-icon img {
+      width: 112px;
+      height: 112px;
+      border-radius: 24px;
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        0 18px 48px rgba(0, 5, 14, 0.45);
+    }
+
+    .vialvault-calculator-page .product-screenshots {
+      border-bottom: var(--border-width) solid rgba(158, 175, 195, 0.1);
+    }
+
+    .vialvault-calculator-page .product-screenshots-heading {
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .vialvault-calculator-page .product-screenshots-heading > p:last-child {
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .vialvault-calculator-page .screenshot-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .vialvault-calculator-page .screenshot-card {
+      margin: 0;
+      height: 100%;
+    }
+
+    .vialvault-calculator-page .screenshot-card .asset-frame__media {
+      width: 100%;
+      height: auto;
+      border-radius: max(16px, calc(var(--card-radius) - 6px));
+      background: #05080f;
+    }
+
+    .vialvault-calculator-page .screenshot-card figcaption {
+      margin: 0;
+      padding: 14px 6px 4px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .vialvault-calculator-page .product-availability {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 18px;
+      margin: 28px 0 0;
+    }
+
+    .vialvault-calculator-page .product-availability span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border: var(--border-width) solid rgba(105, 177, 255, 0.34);
+      border-radius: var(--button-radius);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .vialvault-calculator-page .product-availability span::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(105, 177, 255, 0.6);
+    }
+
+    .vialvault-calculator-page .product-download {
+      border-top: var(--border-width) solid rgba(158, 175, 195, 0.1);
+      border-bottom: var(--border-width) solid rgba(158, 175, 195, 0.1);
+      background: rgba(13, 26, 44, 0.48);
+    }
+
+    .vialvault-calculator-page .product-download-panel {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 48px;
+      padding: 68px;
+      border: var(--border-width) solid var(--border-strong);
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(105, 177, 255, 0.12), transparent 24rem),
+        var(--surface-raised);
+      box-shadow: var(--shadow-large);
+    }
+
+    .vialvault-calculator-page .product-download-copy {
+      margin: 0;
+      max-width: 520px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .vialvault-calculator-page .product-download-panel .store-badges {
+      justify-content: flex-end;
+    }
+
+    .vialvault-calculator-page .product-closing-panel .store-badges {
+      margin-bottom: 8px;
+    }
+
     .vialvault-calculator-page .product-related {
       border-bottom: var(--border-width) solid rgba(158, 175, 195, 0.1);
     }
@@ -1653,11 +1842,50 @@
       .vialvault-calculator-page .capability-card:last-child {
         grid-column: auto;
       }
+
+      .vialvault-calculator-page .screenshot-gallery {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 28px;
+      }
+
+      .vialvault-calculator-page .product-download-panel {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 42px 34px;
+        border-radius: 24px;
+      }
+
+      .vialvault-calculator-page .product-download-panel .store-badges {
+        justify-content: flex-start;
+      }
     }
 
     @media (max-width: 520px) {
       .vialvault-calculator-page h1 {
         font-size: clamp(42px, 12vw, 64px);
+      }
+
+      .vialvault-calculator-page .product-app-icon img {
+        width: 96px;
+        height: 96px;
+        border-radius: 22px;
+      }
+
+      .vialvault-calculator-page .product-download-panel {
+        padding: 32px 22px;
+      }
+
+      .store-badges,
+      .store-badges--hero,
+      .vialvault-calculator-page .product-download-panel .store-badges {
+        justify-content: center;
+      }
+
+      .store-badge img {
+        height: 38px;
       }
     }
 

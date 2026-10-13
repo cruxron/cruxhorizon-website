@@ -7,6 +7,8 @@ production website.
 
 - `logo-on-dark.svg` — horizontal Crux Horizon logo used in all website headers
 - `favicon.svg` — square Crux Horizon browser icon used by all HTML pages
+- `badges/app-store-badge.svg` — App Store download badge
+- `badges/google-play-badge.svg` — Google Play download badge
 
 The current artwork is approved production artwork. Do not redraw, optimise,
 simplify, recolour, or otherwise modify either SVG without explicit approval.

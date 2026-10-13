@@ -1,48 +1,32 @@
 # VialVault Calculator product visuals
 
-This directory is reserved for real VialVault Calculator product screenshots.
-Do not add mock interfaces or placeholder images.
+Real product assets sourced from the VialVault Calculator application
+project (`flutterprojects/vialvault_calculator`). Do not add mock
+interfaces or fabricated screenshots.
 
-## Intended assets
+## Active website assets
 
-- `hero.webp` — primary Calculator view for the hero; recommended source export
-  at least 1600 px wide
-- `reconstitution.webp` — reconstitution / vial amount workflow
-- `draw-volume.webp` — intended amount to draw volume result
-- `syringe.webp` — U-100 syringe visualisation
+| File | Source | Use |
+| --- | --- | --- |
+| `app-icon.png` / `app-icon.webp` | iOS `AppIcon` 1024×1024, resized to 512 | Hero icon, Open Graph |
+| `screenshot-inputs.png` / `.webp` | `VialVault_AppStore_1.png` | Gallery — input workflow |
+| `screenshot-results.png` / `.webp` | `VialVault_AppStore_2.png` | Gallery — draw volume + syringe |
+| `screenshot-concentration.png` / `.webp` | `VialVault_AppStore_4.png` | Gallery — concentration + syringe |
 
-Use optimised WebP files where practical and retain an original source outside
-the deployed website when needed.
+Screenshots are resized to 720×1557 for web delivery. Prefer the WebP
+variants in `<picture>` elements; PNG remains the fallback.
 
-## Adding the hero visual
+## Source locations (application project)
 
-In `products/vialvault-calculator/index.html`:
+- Icon: `ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png`
+- Also available: `assets/images/VialVault_Calculator_Icon.png` (512)
+- App Store screenshots: `assets/images/VialVault_AppStore_1.png` … `_4.png`
+- Google Play feature graphic: `assets/images/vialvault-google-play-feature-graphic.png`
 
-1. Remove `hidden`, `aria-hidden="true"`, and `data-asset-state="empty"` from
-   the hero `.product-showcase` figure.
-2. Add `has-product-visual` to `.product-hero-layout`.
-3. Insert an image with intrinsic dimensions, for example:
+Original full-resolution files remain in the application repository.
+They are intentionally not duplicated at full size in this website repo.
 
-   `<img class="asset-frame__media" src="../../assets/images/products/vialvault-calculator/hero.webp" width="1600" height="1000" alt="VialVault Calculator showing [describe the visible workflow]">`
+## Unused but available
 
-Alt text must describe what the real screenshot communicates. Do not use a
-generic value such as "VialVault Calculator screenshot".
-
-## Adding capability visuals
-
-Prepared capability cards may contain a hidden `.capability-visual` figure:
-
-1. Remove `hidden`, `aria-hidden="true"`, and `data-asset-state="empty"`.
-2. Add `has-product-visual` to the parent `.capability-card`.
-3. Insert the relevant image with `width`, `height`, and specific alt text.
-
-## Presentation utilities
-
-Reusable classes in `assets/css/site.css` are available when real assets arrive:
-
-- `.asset-frame` — standard bordered screenshot frame
-- `.asset-frame--device` — deeper device-style surround
-- `.asset-frame__media` — responsive image sizing
-
-Add `data-asset-state="empty"` and `hidden` while a frame has no real image.
-Empty frames are never displayed.
+- `VialVault_AppStore_3.png` — additional results screenshot (similar to 2/4)
+- Google Play feature graphic — landscape store banner, not used on the product page yet
